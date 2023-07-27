@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="vd.css"/>
+</head>
+<body>
+<h3 class="heading"> DIOCESE DE GOMA EVENEMENT</h3>
+<div class="container">
+    <div class="main-video">
+        <div class="video">
+            <video src="video/vide2.mp4" controls muted autoplay></video>
+            <h3 class="title">01. Le_Diocese_catholique
+                _de_GOMA_s'enrichit_
+                de_deux_nouveaux
+                _pretres_et_six_diacres</h3>
+        </div>
+    </div>
+    <div class="video-list">
+        <div class="vid active">
+            <video src="video/vide2.mp4" muted></video>
+            <h3 class="title">01. Le_Diocese_catholique
+                _de_GOMA_s'enrichit_de_
+                deux_nouveaux
+                _pretres_et_six_diacres</h3>
+        </div>
+        <div class="vid">
+            <video src="video/vide10.mp4" muted></video>
+            <h3 class="title">02. Mgr_Willy_Ngumbi_
+                (Eveque_du_diocèse_
+                de_GOMA_avec_les_
+                petits_chanteurs_
+                de_GOMA)</h3>
+        </div>
+        <div class="vid">
+            <video src="video/vide7.mp4" muted></video>
+            <h3 class="title">03. 7_école_de_
+                diocèse_de_goma_
+                sont_dans_le_top_10_GOMA</h3>
+        </div>
+        <div class="vid">
+            <video src="video/vide4.mp4" muted></video>
+            <h3 class="title">04. Qui_est_l'éveque_
+                Willy_NGUMBI??</h3>
+        </div>
+        <div class="vid">
+            <video src="video/vide5.mp4" muted></video>
+            <h3 class="title">05. Dicèse_de_GOMA_jubilé_
+                d'argent_du_groupe_
+                d'accompagnement
+                _des_malades</h3>
+        </div>
+    </div>
+</div>
+<script>
+
+    let listvideo = document.querySelectorAll('.video-list .vid');
+    let mainvideo = document.querySelector('.main-video video');
+    let title = document.querySelector('.main-video .title');
+
+    listvideo.forEach(video =>{
+        video.onclick = () =>{
+            listvideo.forEach(vid => vid.classList.remove('active'));
+            video.classList.add('active');
+            if(video.classList.contains('active')){
+                let src = video.children[0].getAttribute('src');
+                mainvideo.src = src;
+                let text = video.children[1].innerHTML;
+                title.innerHTML = text;
+            };
+        };
+    });
+
+</script>  
+</body>
+</html>

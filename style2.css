@@ -1,0 +1,95 @@
+#div{
+    background-color: #576f80;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 225px;
+    width: 100%;
+}
+#top{
+    background-color: #576f80;
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+}
+#pot{
+    background-color:rgb(245, 246, 250);
+    position: absolute;
+    top: 275px;
+    left: 0px;
+    height: 750px;
+    width: 100%;
+}
+#pop{
+    background-color: black;
+    position: absolute;
+    top: 1000px;
+    left: 0px;
+    height: 500px;
+    width: 100%;
+    color: white;
+}
+#a1{
+    height: 220px;
+    width: 750px;
+}
+#a2{
+    height: 220px;
+    width: 221px;
+}
+#a3{
+    height: 220px;
+    width: 284px;
+}
+.a1{
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial;
+    margin: 0px 20px 0px 20px;
+   float: left;
+   color: white;
+}
+.papa{
+    float: left;
+    border: 1px solid white ;
+    margin: 30px;
+}
+h1{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(9, 8, 8);
+}
+.a2{
+    height: 300px;
+    width: 521px;
+}
+#top1{
+    background-color: rgb(183, 183, 35);
+    position: absolute;
+    top: 1490px;
+    left: 0px;
+    height: 60px;
+    width: 100%;
+
+}
+.a3{
+    height: 40px;
+    width: 100px;
+}
+.papa1{
+    float: left;
+    border: 1px solid black ;
+    margin: 11px;
+}
+#cool{
+    background-color: black;
+    position: absolute;
+    top: 1550px;
+    left: 0px;
+    height: 40px;
+    width: 92%;
+    padding: 30px 50px 30px 50px;
+    color: white;
+}
