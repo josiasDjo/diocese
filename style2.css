@@ -1,8 +1,8 @@
 #div{
     background-color: #576f80;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     height: 225px;
     width: 100%;
 }
@@ -11,7 +11,7 @@
     position: absolute;
     top: 225px;
     left: 0px;
-    height: 60px;
+    height: auto;
     width: 100%;
 }
 #pot{
@@ -21,6 +21,7 @@
     left: 0px;
     height: 750px;
     width: 100%;
+    margin-bottom: 30px;
 }
 #pop{
     background-color: black;
@@ -29,6 +30,7 @@
     left: 0px;
     height: 500px;
     width: 100%;
+    margin-top: 1000px;
     color: white;
 }
 #a1{
@@ -65,15 +67,6 @@ h1{
     height: 300px;
     width: 521px;
 }
-#top1{
-    background-color: rgb(183, 183, 35);
-    position: absolute;
-    top: 1490px;
-    left: 0px;
-    height: 60px;
-    width: 100%;
-
-}
 .a3{
     height: 40px;
     width: 100px;
@@ -83,13 +76,87 @@ h1{
     border: 1px solid black ;
     margin: 11px;
 }
-#cool{
-    background-color: black;
-    position: absolute;
-    top: 1550px;
-    left: 0px;
-    height: 40px;
-    width: 92%;
-    padding: 30px 50px 30px 50px;
-    color: white;
+
+#menuBurg {
+    display: none;
+}
+#top label {
+    display: none;
+}
+footer {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1271px) {
+    #a2{
+        display: none;
+    }
+}
+@media screen and (max-width: 1100px) {
+    #a1{
+        display: none;
+    }
+    .menubar  {
+        display: none;
+    }
+    label {
+        display: initial;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    #a3{
+        display: none;
+    }
+    .menubarresponsive {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #top h3 a {
+        text-align: left;
+        padding: 10px;
+    }
+    #menuBurg:checked ~ .menubarresponsive {
+        display: flex;
+        flex-direction: column;
+        /* top: -405px; */
+        right: 0;
+        width: 100%;
+        height: auto;
+        position: absolute;
+    }
+    #top {
+        width: 100%;
+        height: 300px;
+        top: 20px;
+        right: 0;
+        left: 0;
+        text-align: left;
+        background-color: #576f80;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 945px) {
+    #pop{
+        background-color: black;
+        position: absolute;
+        top: 1000px;
+        left: 0px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        color: white;
+    }
+    #pot .papa img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #pot .papa img{
+        width: 250px;
+        height: 150px;
+    }
 }

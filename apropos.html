@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diocese de Goma</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
@@ -15,17 +15,17 @@
 
     </div>
     <div id="top">
-        <h3>
-        <a class="a1" href="index.html">ACCUEIL</a>
-        <a class="a1" href="accueil.html">DIOCESE</a>
-        <a class="a1" href="#">APROPOS</a>
-        <a class="a1" href="eglise.html">EGLISE ET SOCIETE</a>
-        <a class="a1" href="actualite.html">ACTUALITE</a>
-        <a class="a1" href="https://diocesedegoma.org/">JOIGNEZ-NOUS </a>
-        <a class="a1" href="vd.html">EVENEMENT</a>
-        
+        <h3 class="menubar" id="test1">
+            <a class="a1" href="index.html">ACCUEIL</a>
+            <a class="a1" href="accueil.html">DIOCESE</a>
+            <a class="a1" href="#">APROPOS</a>
+            <a class="a1" href="eglise.html">EGLISE ET SOCIETE</a>
+            <a class="a1" href="actualite.html">ACTUALITE</a>
+            <!-- <a class="a1" href="https://diocesedegoma.org/">JOIGNEZ-NOUS </a> -->
+            <a class="a1" href="vd.html">EVENEMENT</a>
         </h3>
-        
+        <label for="menuBurg" onclick="myFunction();"><img src="menu-burger.png" width="30px" height="30px"/></label>
+        <input type="checkbox" id="menuBurg">
     </div>
     <div id="pot">
         <h1> Apropos du Diocèse de Goma</h1>
@@ -64,7 +64,21 @@
 
         </div>
      
+    </div>    
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "menubar") {
+                x.className += "responsive";
+            } else {
+                x.className = "menubar"; 
+            }
+        }
+    </script> 
+    
+</body>
+<footer>
     <div id="pop">
         <div class="papa1">
             <p> 
@@ -321,25 +335,5 @@
             </p>
 
         </div>
-
-        
-    </div>
-    <div id="top1">
-        <h3>
-            <a class="a1" href="index.html">DIOCESE</a>
-            <a class="a1" href="#">APROPOS</a>
-            <a class="a1" href="eglise.html">EGLISE ET SOCIETE</a>
-            <a class="a1" href="actualite.html">ACTUALITE</a>
-            <a class="a1" href="https://diocesedegoma.org/">JOIGNEZ-NOUS </a>
-            
-            </h3>
-        
-    </div>
-    <div id="cool">
-        <a>2023-DIOCESE DE GOMA.All Rights Reserved. Website Design:CELLULE DE COMMUNICATION</a>
-
-    </div>
-
-    
-</body>
+</footer>
 </html>
